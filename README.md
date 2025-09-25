@@ -2,6 +2,18 @@
 
 A free, open-source web application that converts images to editable text using OCR (Optical Character Recognition) and AI post-processing. Built with privacy and performance in mind.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-brightgreen?style=for-the-badge&logo=vercel)](https://image-to-text-converter-website.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/chirag127/Image-to-Text-Converter-Website)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+
+## 🌐 Live Demo
+
+**🚀 Try it now:** [https://image-to-text-converter-website.vercel.app](https://image-to-text-converter-website.vercel.app)
+
+- **Frontend**: Deployed on Vercel ✅
+- **Backend API**: Deployed on Render ✅
+- **Status**: Fully Operational 🟢
+
 ## 🚀 Features
 
 - **Free & Open Source**: No registration, no limits, completely free
@@ -42,8 +54,8 @@ A free, open-source web application that converts images to editable text using 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/ocr-app.git
-   cd ocr-app
+   git clone https://github.com/chirag127/Image-to-Text-Converter-Website.git
+   cd Image-to-Text-Converter-Website
    ```
 
 2. **Install dependencies**
@@ -130,31 +142,27 @@ npm test
 
 ## 🚀 Deployment
 
-### Frontend (Vercel)
+### Live Application
+- **Frontend**: https://image-to-text-converter-website.vercel.app (Vercel)
+- **Backend API**: https://image-to-text-converter-backend.onrender.com (Render)
 
-1. Connect your GitHub repository to Vercel
-2. Set build command: `cd frontend && npm run build`
-3. Set output directory: `frontend/dist`
-4. Deploy automatically on push to main
+### Deploy Your Own
+📖 **[Complete Deployment Guide](DEPLOYMENT.md)** - Step-by-step instructions for deploying to free platforms
 
-### Backend (DigitalOcean App Platform)
-
-1. Create a new app from your GitHub repository
-2. Set build command: `cd backend && npm run build`
-3. Set run command: `cd backend && npm start`
-4. Add environment variables
-5. Deploy
-
-### Using Docker
-
+**Quick Deploy:**
 ```bash
-# Build images
-docker build -t ocr-backend ./backend
-docker build -t ocr-frontend ./frontend
+# Get deployment checklist
+node deploy-setup.js
+```
 
-# Run containers
-docker run -p 3000:3000 ocr-backend
-docker run -p 80:80 ocr-frontend
+1. Fork this repository
+2. Deploy frontend to [Vercel](https://vercel.com) (set root directory to `frontend`)
+3. Deploy backend to [Render](https://render.com) (set root directory to `backend`)
+4. Update frontend environment variables with your backend URL
+
+**Docker:**
+```bash
+docker-compose up --build
 ```
 
 ## ⚙️ Configuration
@@ -205,9 +213,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🐛 [Report Issues](https://github.com/your-username/ocr-app/issues)
-- 💬 [Discussions](https://github.com/your-username/ocr-app/discussions)
-- 📧 Email: support@your-domain.com
+- 🐛 [Report Issues](https://github.com/chirag127/Image-to-Text-Converter-Website/issues)
+- 💬 [Discussions](https://github.com/chirag127/Image-to-Text-Converter-Website/discussions)
+- 🌐 [Live Demo](https://image-to-text-converter-website.vercel.app)
 
 ---
 

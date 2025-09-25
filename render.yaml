@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: image-to-text-converter-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install && npm run build
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MAX_UPLOAD_MB
+        value: 10
+      - key: RATE_LIMIT_MAX
+        value: 20
+      - key: RATE_LIMIT_WINDOW
+        value: 3600000
+    healthCheckPath: /health

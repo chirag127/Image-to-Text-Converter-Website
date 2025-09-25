@@ -20,7 +20,7 @@ export function Header() {
                             About
                         </a>
                         <a
-                            href="https://github.com/your-username/ocr-app"
+                            href="https://github.com/chirag127/Image-to-Text-Converter-Website"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-600 hover:text-gray-900 transition-colors"

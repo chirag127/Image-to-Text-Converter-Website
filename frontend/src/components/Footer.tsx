@@ -28,7 +28,7 @@ export function Footer() {
                             This project is open source and available on GitHub.
                         </p>
                         <a
-                            href="https://github.com/your-username/ocr-app"
+                            href="https://github.com/chirag127/Image-to-Text-Converter-Website"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-600 hover:text-blue-700 text-sm font-medium"

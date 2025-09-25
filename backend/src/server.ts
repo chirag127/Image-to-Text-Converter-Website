@@ -18,7 +18,7 @@ async function start() {
     // CORS configuration
     await fastify.register(cors, {
       origin: process.env.NODE_ENV === 'production'
-        ? ['https://your-frontend-domain.vercel.app']
+        ? ['https://image-to-text-converter-website.vercel.app', 'https://free-ocr.vercel.app']
         : true
     });
 

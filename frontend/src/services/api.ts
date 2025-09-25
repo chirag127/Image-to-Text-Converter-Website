@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://image-to-text-converter-backend.onrender.com/api';
 
 export interface OCRResponse {
   success: boolean;
