@@ -151,6 +151,9 @@ npm test
 
 **Quick Deploy:**
 ```bash
+# Test builds locally first
+.\test-build.ps1
+
 # Get deployment checklist
 node deploy-setup.js
 ```

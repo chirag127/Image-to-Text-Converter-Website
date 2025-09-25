@@ -1,4 +1,3 @@
-import React from 'react';
 import { ImageUploader } from './components/ImageUploader';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
