@@ -3,7 +3,7 @@ services:
     name: image-to-text-converter-backend
     env: node
     plan: free
-    buildCommand: cd backend && npm install && npm run build
+    buildCommand: cd backend && npm ci && npm run build
     startCommand: cd backend && npm start
     envVars:
       - key: NODE_ENV
@@ -17,3 +17,7 @@ services:
       - key: RATE_LIMIT_WINDOW
         value: 3600000
     healthCheckPath: /health
+    disk:
+      name: logs
+      mountPath: /opt/render/project/src/backend/logs
+      sizeGB: 1

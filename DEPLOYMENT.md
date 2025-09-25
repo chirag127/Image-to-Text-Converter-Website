@@ -62,6 +62,8 @@ This guide explains how to deploy the Free OCR application to free hosting platf
    LOG_LEVEL=info
    ```
 
+   **Important**: Make sure to use `npm ci` instead of `npm install` for consistent builds.
+
 4. **Deploy**
    - Click "Create Web Service"
    - Your backend will be live at `https://your-ocr-backend.onrender.com`
@@ -126,21 +128,29 @@ docker run -p 80:80 ocr-frontend
 
 ### Common Issues
 
-1. **CORS Errors**
+1. **TypeScript Build Errors**
+   - Ensure `@types/node` and `typescript` are in dependencies (not devDependencies)
+   - Use Node.js version 18+ for compatibility
+   - Run `npm ci` instead of `npm install`
+
+2. **CORS Errors**
    - Update backend CORS configuration
    - Ensure frontend URL is in allowed origins
 
-2. **Build Failures**
-   - Check Node.js version compatibility
+3. **Build Failures**
+   - Check Node.js version compatibility (use 18.x or 20.x)
    - Verify all dependencies are installed
+   - Clear node_modules and reinstall if needed
 
-3. **API Timeouts**
-   - Increase timeout limits
+4. **API Timeouts**
+   - Increase timeout limits in frontend (currently 60s)
    - Optimize OCR processing
+   - Use smaller test images initially
 
-4. **Memory Issues**
+5. **Memory Issues**
    - Use smaller images for testing
    - Monitor memory usage on free tiers
+   - Render free tier has 512MB RAM limit
 
 ## 📈 Scaling
 
